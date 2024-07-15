@@ -23,8 +23,32 @@ declare namespace API {
     phone?: string;
   };
 
+  type GithubIssueItem = {
+    id: number;
+
+    name: string;
+
+    avatar: string;
+
+    userId: string;
+
+    password: string;
+
+    address?: string;
+
+    signature?: string;
+
+    phone: string;
+  };
+
+  type Response<T> = {
+    code: number;
+    messages: string;
+    data: T;
+  };
+
   type LoginResult = {
-    status?: string;
+    messages?: string;
     type?: string;
     currentAuthority?: string;
   };

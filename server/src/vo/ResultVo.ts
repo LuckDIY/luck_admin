@@ -1,5 +1,5 @@
-export class ResultVo<T>{
-    code:number;
-    status:string;
-    data?:T;
+export class ResultVo<T> {
+  code: number;
+  messages: string;
+  data?: T;
 }
